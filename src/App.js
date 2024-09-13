@@ -4,7 +4,7 @@ import ListaProdutos from './Componentes/ListaProduto';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import CadastroProduto from './Componentes/CadastroProdutos';
-
+import BarraMenu from './Componentes/BarraMenu/index';
 
 
 function App() {
@@ -22,9 +22,9 @@ function App() {
   }
   return (
     <div>
+      <BarraMenu></BarraMenu>
       <h1>Lista Produtos</h1>
       <ListaProdutos produtos={produtos} carregaProdutos={carregaProdutos}/>
-      <CadastroProduto carregaProdutos={carregaProdutos}/>
 
     </div>
   );
